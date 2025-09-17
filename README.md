@@ -1,16 +1,29 @@
-# fnotes
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+📒 FNotes
+Современное десктопное приложение для заметок с поддержкой: - 🗂 Организации заметок в папки - 🏷 Системы тегов - 🌗 Переключения между светлой и тёмной темой (с сохранением состояния) - 💾 Локального хранения данных через Hive 
+Приложение написано на Flutter и работает на: - macOS - Windows (нужна сборка на Windows с Visual Studio) - Linux (экспериментально)
+—————
+Установка и запуск:
+1. Склонировать репозиторий:
+git clone https://github.com/username/fnotes.git cd fnotes
+2. Установить зависимости:
+flutter pub get
+3. Запуск в режиме разработки:
+flutter run -d macos
+или
+flutter run -d windows
+—————
+Сборка релиза:
+macOS:
+flutter build macos --release
+Собранное приложение появится в:
+build/macos/Build/Products/Release/
+Windows:
+Убедитесь, что установлен Visual Studio с Desktop Development C++
+flutter build windows --release
+Собранное приложение появится в:
+build/windows/x64/runner/Release/
+—————
+⚙️ Технологии
+•	Flutter 
+•	Hive 
+•	Hive Flutter
